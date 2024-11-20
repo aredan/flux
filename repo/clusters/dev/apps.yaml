@@ -6,7 +6,7 @@ metadata:
 spec:
   interval: 30m0s
   dependsOn:
-    - name: infrastructure
+    - name: repo/infrastructure
   sourceRef:
     kind: GitRepository
     name: flux-system
