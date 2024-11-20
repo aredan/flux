@@ -8,7 +8,7 @@ metadata:
     app.kubernetes.io/instance: adguard-home
 spec:
   type: LoadBalancer
-  externalTrafficPolicy: cluster
+  externalTrafficPolicy: Cluster
   ports:
   - port: 53
     targetPort: dns-udp
@@ -27,7 +27,7 @@ metadata:
     app.kubernetes.io/instance: adguard-home
 spec:
   type: LoadBalancer
-  externalTrafficPolicy: cluster
+  externalTrafficPolicy: Cluster
   ports:
   - port: 53
     targetPort: dns-tcp
