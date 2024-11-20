@@ -8,7 +8,7 @@ spec:
   sourceRef:
     kind: GitRepository
     name: flux-system
-  path: ./apps/dev
+  path: ./repo/apps/dev
   prune: true
   postBuild:
     substitute:
