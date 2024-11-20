@@ -13,3 +13,4 @@ spec:
   postBuild:
     substitute:
       cluster_tz: "America/Santo_Domingo"
+      domain: "aanetworks.org"

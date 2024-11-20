@@ -4,10 +4,6 @@ metadata:
   name: ingress-adguard
   namespace: adguard-home
 spec:
-  tls:
-  - hosts:
-    - "adguard.${domain}"
-    secretName: internal-com-tls
   rules:
   - host: "adguard.${domain}"
     http:
