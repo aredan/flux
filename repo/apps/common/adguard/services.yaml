@@ -17,25 +17,6 @@ spec:
   selector:
     app.kubernetes.io/name: adguard-home
     app.kubernetes.io/instance: adguard-home
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: adguard-home-dns-tcp
-  labels:
-    app.kubernetes.io/name: adguard-home
-    app.kubernetes.io/instance: adguard-home
-spec:
-  type: LoadBalancer
-  externalTrafficPolicy: Cluster
-  ports:
-  - port: 53
-    targetPort: dns-tcp
-    protocol: TCP
-    name: dns-tcp
-  selector:
-    app.kubernetes.io/name: adguard-home
-    app.kubernetes.io/instance: adguard-home
 
 ---
 apiVersion: v1
