@@ -10,7 +10,6 @@ spec:
     name: flux-system
   path: ./apps/dev
   prune: true
-  validation: client
   postBuild:
     substitute:
       cluster_tz: "America/Santo_Domingo"
