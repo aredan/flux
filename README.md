@@ -38,9 +38,7 @@ General
 
 Backup
  - [ ] Backup data
- - [ ] Purge influxdb backups ==10
  - [ ] Deploy grafana operator
- - [ ] Remove grafana from monitoring ns
 
 Secrets
  - [x] Deploy external-secrets-operator
