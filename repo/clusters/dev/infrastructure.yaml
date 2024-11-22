@@ -39,3 +39,13 @@ spec:
       target:
         kind: ClusterIssuer
         name: letsencrypt
+  postBuild:
+    substitute:
+      ts-client-id: "id"
+      ts-client-secret: "secret"
+      k8s-cluste-name: "cluster"
+    substituteFrom:
+      - kind: Secret
+        name: ts-credentials
+        namespace: tailscale
+
