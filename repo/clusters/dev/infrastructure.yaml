@@ -47,5 +47,4 @@ spec:
     substituteFrom:
       - kind: Secret
         name: ts-credentials
-        namespace: tailscale
 
