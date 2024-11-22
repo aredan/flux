@@ -19,7 +19,7 @@ Two cluster running in Harvester that where provisioned using Rancher Manager.
 
 #### Infrastructure
 
-WIP
+For more information about the hardware, you can go to [aaNetworks HomeLAB repo](https://github.com/aaNetworks/HomeLAB)
 
 ### Apps
 
@@ -43,7 +43,8 @@ Backup
  - [ ] Remove grafana from monitoring ns
 
 Secrets
- - [ ] Provisioning of secrets to vault
+ - [x] Deploy external-secrets-operator
+ - [x] Provisioning of secrets to vault
  - [ ] Migrate zigbeemqtt mqtt creds to vault
  - [ ] Migrate zigbeemqtt keys to vault
 
