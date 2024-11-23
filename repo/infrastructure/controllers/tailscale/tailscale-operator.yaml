@@ -33,3 +33,6 @@ spec:
         - values.yaml
   values:
     installCRDs: true
+    oauth.clientId: "${ts-client-id}"
+    oauth.clientSecret: "${ts-client-secret}"
+    hostname: "${k8s-cluster-name}"

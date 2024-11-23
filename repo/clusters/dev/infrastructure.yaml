@@ -43,7 +43,7 @@ spec:
     substitute:
       ts-client-id: "id"
       ts-client-secret: "secret"
-      k8s-cluste-name: "cluster"
+      k8s-cluster-name: "cluster"
     substituteFrom:
       - kind: Secret
         name: ts-credentials
