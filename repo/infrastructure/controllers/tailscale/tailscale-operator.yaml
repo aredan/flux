@@ -30,6 +30,6 @@ spec:
         namespace: tailscale
       interval: 12h
       valuesFiles:
-        - tailscale-operator-values.yaml
+        - values.yaml
   values:
     installCRDs: true
