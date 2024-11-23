@@ -29,8 +29,6 @@ spec:
         name: tailscale
         namespace: tailscale
       interval: 12h
-      valuesFiles:
-        - values.yaml
   values:
     installCRDs: true
     oauth.clientId: "${ts-client-id}"
