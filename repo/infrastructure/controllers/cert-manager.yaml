@@ -23,7 +23,7 @@ metadata:
   labels:
     kustomize.toolkit.fluxcd.io/substitute: disabled
   annotations:
-    fluxcd.io/substitute: disabled
+    fluxcd.io/substitute: false
 spec:
   interval: 30m
   chart:
