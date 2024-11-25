@@ -22,5 +22,5 @@ spec:
     substituteFrom:
       - kind: Secret
         name: ts-credentials
-        optional: true
+
 
