@@ -13,7 +13,6 @@ spec:
     name: flux-system
   path: ./repo/infrastructure/controllers
   prune: true
-  validation: client
   wait: true
   postBuild:
     substitute:
@@ -41,7 +40,6 @@ spec:
     name: flux-system
   path: ./repo/infrastructure/configs
   prune: true
-  validation: client
   patches:
     - patch: |
         - op: replace
