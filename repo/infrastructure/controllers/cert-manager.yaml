@@ -21,9 +21,9 @@ metadata:
   name: cert-manager
   namespace: cert-manager
   labels:
-    kustomize.toolkit.fluxcd.io/substitute: disabled
+    kustomize.toolkit.fluxcd.io/substitute: "disabled"
   annotations:
-    fluxcd.io/substitute: false
+    fluxcd.io/substitute: "false"
 spec:
   interval: 30m
   chart:
