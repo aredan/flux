@@ -14,15 +14,7 @@ spec:
   path: ./repo/infrastructure/controllers
   prune: true
   wait: true
-  postBuild:
-    substitute:
-      ts-client-id: "id"
-      ts-client-secret: "secret"
-      k8s-cluster-name: "cluster"
-    substituteFrom:
-      - kind: Secret
-        name: ts-credentials
-        optional: true
+
 
 ---
 apiVersion: kustomize.toolkit.fluxcd.io/v1
