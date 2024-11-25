@@ -16,9 +16,9 @@ spec:
   wait: true
   postBuild:
     substitute:
-      ts-client-id: "id"
-      ts-client-secret: "secret"
-      k8s-cluster-name: "cluster"
+      ts_client_id: "id"
+      ts_client_secret: "secret"
+      k8s_cluster_name: "cluster"
     substituteFrom:
       - kind: Secret
         name: ts-credentials

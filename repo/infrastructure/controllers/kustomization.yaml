@@ -3,4 +3,3 @@ kind: Kustomization
 resources:
   - cert-manager.yaml
   - external-secrets-stack.yaml
-  - tailscale/ts.yaml
