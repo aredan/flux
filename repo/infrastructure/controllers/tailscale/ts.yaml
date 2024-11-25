@@ -1,17 +1,5 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-metadata:
-  namespace: tailscale
-  name: tailscale-controller
 resources:
   - tailscale-operator.yaml
-spec:
-  postBuild:
-    substitute:
-      ts-client-id: "id"
-      ts-client-secret: "secret"
-      k8s-cluster-name: "cluster"
-    substituteFrom:
-      - kind: Secret
-        name: ts-credentials
-        optional: true
+
