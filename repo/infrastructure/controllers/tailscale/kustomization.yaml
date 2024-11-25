@@ -3,7 +3,7 @@ kind: Kustomization
 
 spec:
   path:
-    tailscale-operator.yaml
+    ./tailscale-operator.yaml
   postBuild:
     substitute:
       ts-client-id: "id"
