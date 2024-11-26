@@ -31,6 +31,6 @@ spec:
       interval: 12h
   values:
     installCRDs: true
-    oauth.clientId: "${id}"
-    oauth.clientSecret: "${secret}"
-    hostname: "${cluster}"
+    oauth.clientId: '"${id}"'
+    oauth.clientSecret: '"${secret}"'
+    operatorConfig.hostname: '"${cluster}"'
