@@ -27,6 +27,7 @@ For more information about the hardware, you can go to [aaNetworks HomeLAB repo]
 | -------- | ------ | ------- |
 | [node-red](https://nodered.org/) | raw manifests | Node-RED low code for home automation |
 | [adguard]() | helm template | AdGuard Home to block ADs, safe search and browsing |
+| [tailscale-operator](https://tailscale.com/kb/1236/kubernetes-operator) helm tempalte | Connecting the cluster to TailNet |
 
 
 ### TODO
