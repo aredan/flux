@@ -31,6 +31,6 @@ spec:
       interval: 12h
   values:
     installCRDs: true
-    oauth.clientId: ${ts_client_id}
-    oauth.clientSecret: ${ts_client_secret}
-    hostname: ${k8s_cluster_name}
+    oauth.clientId: ${id}
+    oauth.clientSecret: ${secret}
+    hostname: ${cluster}
