@@ -5,6 +5,7 @@ metadata:
   labels:
     name: versions
   name: versions
+  namespace: rancher-versions
 spec:
   selector:
     app: versions
