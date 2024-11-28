@@ -1,0 +1,19 @@
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: versions
+  annotations:
+    tailscale.com/funnel: "true"
+spec:
+  rules:
+  - host: "versions.${domaint_ts}"
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: versions
+            port:
+              number: 5000
