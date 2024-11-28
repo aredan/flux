@@ -14,3 +14,4 @@ spec:
     substitute:
       cluster_tz: "America/Santo_Domingo"
       domain: "aanetworks.org"
+      domain_ts: "wolf-coho.ts.net"
