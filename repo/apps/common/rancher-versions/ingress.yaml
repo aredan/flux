@@ -18,3 +18,7 @@ spec:
             name: versions
             port:
               number: 5000
+  ingressClassName: tailscale
+  tls:
+  - hosts:
+    - "versions.${domain_ts}"
