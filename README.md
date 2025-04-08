@@ -6,7 +6,7 @@ This is a WIP.
 
 #### How it works
 
-Uses [FluxCD](https://fluxcd.io/docs/) to "synchronise" manifests in this repo to clusters running and managed by me. Each cluster will eventually be consistent with manifests in this repo.
+Uses [FluxCD](https://fluxcd.io/docs/) to "synchronise" manifests in this repo to clusters running and managed by `me`. Each cluster will eventually be consistent with manifests in this repo.
 
 ### Configuration
 
