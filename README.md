@@ -12,7 +12,7 @@ Uses [FluxCD](https://fluxcd.io/docs/) to "synchronise" manifests in this repo t
 
 #### Clusters
 
-Two cluster running in Harvester that where provisioned using Rancher Manager.
+Two cluster running Talos on Incus provisioned using Omni.
 
 * Development - [dev](clusters/dev/)
 * Production - [prod](clusters/prod/)
@@ -26,9 +26,10 @@ For more information about the hardware, you can go to [aaNetworks HomeLAB repo]
 | Workload | Source | Purpose |
 | -------- | ------ | ------- |
 | [node-red](https://nodered.org/) | raw manifests | Node-RED low code for home automation |
-| [adguard]() | helm template | AdGuard Home to block ADs, safe search and browsing |
+| [adguard](https://github.com/AdguardTeam/AdGuardHome) | helm template | AdGuard Home to block ADs, safe search and browsing |
 | [cert-manager](https://cert-manager.io/) | helm template | Certificate management for ingress |
 | [tailscale-operator](https://tailscale.com/kb/1236/kubernetes-operator) | helm tempalte | Connecting the cluster to TailNet |
+| [harbor](https://goharbor.io/) | helm template | container repository for Kubernetes |
 
 ### TODO
 
