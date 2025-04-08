@@ -1,6 +1,6 @@
 ### GitOps with FluxCD for Home Clusters
 
-Kubernetes GitOps using FluxCD for my HomeLAB clusters running on Harvester HCI. This repo targets two clusters: Dev and Prod and aims to keep a common set of manifests between them, using Kustomize to patch values specific for the target clusters.
+Kubernetes GitOps using FluxCD for my HomeLAB clusters running on [Talos](https://www.talos.dev/), [Omni](https://omni.siderolabs.com/) and [Incus](https://linuxcontainers.org/incus/). This repo targets two clusters: Dev and Prod and aims to keep a common set of manifests between them, using Kustomize to patch values specific for the target cluster.
 
 This is a WIP.
 
@@ -14,8 +14,8 @@ Uses [FluxCD](https://fluxcd.io/docs/) to "synchronise" manifests in this repo t
 
 Two cluster running in Harvester that where provisioned using Rancher Manager.
 
-* Development (dev)
-* Production (prod)
+* Development - [dev](clusters/dev/)
+* Production - [prod](clusters/prod/)
 
 #### Infrastructure
 
@@ -30,25 +30,27 @@ For more information about the hardware, you can go to [aaNetworks HomeLAB repo]
 | [cert-manager](https://cert-manager.io/) | helm template | Certificate management for ingress |
 | [tailscale-operator](https://tailscale.com/kb/1236/kubernetes-operator) | helm tempalte | Connecting the cluster to TailNet |
 
-
 ### TODO
 
 General
-* Work on this README.md
-* Add more apps to the table
-* Add more infrastructure details
+
+- [x] Work on this README.md
+- [x] Add more apps to the table
+- [ ] Add more infrastructure details
+- [ ] Add FluxCD directly from Omni cluster-template.
 
 Backup
+
  - [ ] Backup data
  - [ ] Deploy grafana operator
 
 Secrets
+
  - [x] Deploy external-secrets-operator
  - [x] Provisioning of secrets to vault
  - [ ] Migrate zigbeemqtt mqtt creds to vault
  - [ ] Migrate zigbeemqtt keys to vault
 
-
 Maintain
- - [ ] Renovate
 
+ - [ ] Renovate
